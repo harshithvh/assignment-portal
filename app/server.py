@@ -6,27 +6,7 @@ from app.routes import user_routes, admin_routes
 from app.schemas.user_schema import UserLogin
 from app.services.user_service import login_user
 
-app = FastAPI(
-    title="Assignment Submission Portal",
-    description="""
-    This API allows users and admins to manage,submit and access assignments.
-
-    **Users** can:
-    - Register and log in
-    - Upload assignments
-    - View available admins
-
-    **Admins** can:
-    - Register and log in
-    - View and manage assignments tagged to them
-    - Accept or reject assignments
-    """,
-    version="1.0.0",
-    license_info={
-        "name": "MIT License",
-        "url": "https://opensource.org/licenses/MIT",
-    }
-)
+app = FastAPI()
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
