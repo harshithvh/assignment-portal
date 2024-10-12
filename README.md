@@ -39,6 +39,14 @@ http://localhost:8000/docs
 docker-compose down
 ```
 
+## Debugging
+
+- If stuck, check the `app.log` file for error messages or warnings.
+- Ensure your IP address is whitelisted in MongoDB Atlas.
+- Verify Database User Permissions.
+- Double-check `.env` file, all placeholders must be replaced with actual credentials.
+- Verify your cluster's status in the main dashboard - should show Deployed / Running.
+
 ## Further Improvements
 
 - Implement rate limiting to prevent abuse of the API.
