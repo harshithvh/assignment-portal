@@ -41,7 +41,7 @@ docker-compose down
 
 ## Debugging
 
-- If stuck, check the `app.log` file for error messages or warnings.
+- If stuck, check the `server.log` file for error messages or warnings.
 - Ensure your IP address is whitelisted in MongoDB Atlas.
 - Verify Database User Permissions.
 - Double-check `.env` file, all placeholders must be replaced with actual credentials.
