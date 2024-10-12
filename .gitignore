@@ -1,0 +1,9 @@
+# Compiled Python files
+__pycache__/
+
+# Python environment files
+.venv
+venv
+
+# IDE-specific files
+../.idea/
